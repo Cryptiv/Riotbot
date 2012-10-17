@@ -980,7 +980,7 @@
       } else if (u.indexOf("Underground Promotions") !== -1) {
         selections['channels'].push('UndergroundDubstep');
       } else {
-        selections['channels'].push(chooseRandom(mChans));
+        selections['channels'].push(chooseRandom(chans));
       }
       selections['channels'].push(chooseRandom(chans));
       selections['channels'].push(chooseRandom(chans));
@@ -997,9 +997,9 @@
 
     newSongsCommand.prototype.memberChannels = ["http://www.youtube.com/indieplus4"];
 
-    newSongsCommand.prototype.channels = ["http://thekollection.com/category/indie/", "http://wearehunted.com/a/#/emerging/", "http://www.facebook.com/FringeMusicFix", "http://www.youtube.com/musicianswanted"];
+    newSongsCommand.prototype.channels = ["http://sosimpull.com/", "http://www.youtube.com/user/MonstercatMedia", "http://www.youtube.com/user/MusicVVawe", "http://www.youtube.com/user/ukfdubstep", "http://www.youtube.com/user/clowndubstep", "http://www.youtube.com/user/Liquicity", "http://www.youtube.com/user/TastyNetwork", "http://www.youtube.com/user/CapitalDubstep"];
 
-    newSongsCommand.prototype.artists = ["Taylor Swift", "Justin Beiber", "One Direction", "Kanye West"];
+    newSongsCommand.prototype.artists = ["Skrillex", "Knife Party", "Avicii", "Alex Clarke", "PSY"];
 
     return newSongsCommand;
 
@@ -1049,8 +1049,8 @@
 
     themeCommand.prototype.functionality = function() {
       var msg;
-      msg = "We play primarily Indie Rock, Pop, Folk and Electronic but ALL GENRES ARE ALWAYS WELCOME. ";
-      msg += "Subject to votes of disapproval of course.";
+      msg = "EDM, Dubstep, House, Techno, Dance:";
+      msg += "All under one roof!";
       return API.sendChat(msg);
     };
 
@@ -1074,10 +1074,7 @@
 
     rulesCommand.prototype.functionality = function() {
       var msg;
-      msg = "1) Be kind. No trolling. ";
-      msg += "2) Be open minded. Avoid racism and homophobia. ";
-      msg += "3) Be respectful towards everyone including mods. ";
-      msg += "4) Let your votes do the talking.";
+      msg = "♫ Rules! - http://goo.gl/OVmaF";
       return API.sendChat(msg);
     };
 
@@ -1101,7 +1098,7 @@
 
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
-      msg1 = "Welcome to INDIE+! Create a playlist and populate it with songs from either YouTube, Soundcloud, or iTunes.  ";
+      msg1 = "Welcome to Riot Roof! Create a playlist and populate it with songs from either YouTube, Soundcloud, or iTunes.  ";
       msg1 += "Click the 'Join Waitlist/Click to DJ' button and wait your turn to play music. Type '/theme' for specific genres.";
       msg2 = "Play good quality music that hasn't been played recently (check room history).  ";
       msg2 += "Avoid over played artists. Ask a mod if you're unsure about your song choice";
@@ -1131,7 +1128,7 @@
 
     sourceCommand.prototype.functionality = function() {
       var msg;
-      msg = 'Originally Backus wrote me in CoffeeScript. I was edited/updated by INDIE+';
+      msg = 'Originally Backus wrote me in CoffeeScript. I was edited/updated by Riot Roof';
       return API.sendChat(msg);
     };
 
@@ -1640,7 +1637,7 @@
     }
 
     fbCommand.prototype.init = function() {
-      this.command = '/fb';
+      this.command = '/minecraft';
       this.parseType = 'exact';
       return this.rankPrivelege = 'user';
     };
@@ -1652,7 +1649,7 @@
       return API.sendChat(msg);
     };
 
-    fbCommand.prototype.msgs = ["Don't have any friends in real life? That's ok, we'll be your friend.  Join our facebook group: {fb}", "Wondering what a d a m looks like?  Join our facebook group {fb} and find out for yourself!", "We have a facebook group. Join it. Please. {fb}", "INDIE+ is now on friendster! lol just kidding.  Here's our facebook page: {fb} you should join.", "I bet you're handsome.  Join our facebook group so Nora can stalk your photos: {fb}"];
+    fbCommand.prototype.msgs = ["Join our minecraft server: mcriotcraft.com"];
 
     return fbCommand;
 
