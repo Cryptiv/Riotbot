@@ -61,7 +61,8 @@ class newSongsCommand extends Command
 		"http://www.youtube.com/user/ukfdubstep",
 		"http://www.youtube.com/user/clowndubstep",
 		"http://www.youtube.com/user/Liquicity",
-		"http://www.youtube.com/user/TastyNetwork"
+		"http://www.youtube.com/user/TastyNetwork",
+		"http://www.youtube.com/user/CapitalDubstep"
 	]
 	artists: [
 		"Skrillex",
