@@ -5,6 +5,6 @@ class themeCommand extends Command
 		@rankPrivelege='user'
 
 	functionality: ->
-		msg = "We play primarily Indie Rock, Pop, Folk and Electronic but ALL GENRES ARE ALWAYS WELCOME. "
-		msg += "Subject to votes of disapproval of course."
+		msg = "EDM, Dubstep, House, Techno, Dance:"
+		msg += "All under one roof!"
 		API.sendChat(msg)
