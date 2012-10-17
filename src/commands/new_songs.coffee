@@ -23,7 +23,7 @@ class newSongsCommand extends Command
 		else if(u.indexOf("Underground Promotions") != -1)
 			selections['channels'].push 'UndergroundDubstep'
 		else
-			selections['channels'].push chooseRandom mChans	
+			selections['channels'].push chooseRandom chans	
 		selections['channels'].push chooseRandom chans
 		selections['channels'].push chooseRandom chans
 
@@ -55,14 +55,18 @@ class newSongsCommand extends Command
 		"http://www.youtube.com/indieplus4"
 	]
 	channels: [
-		"http://thekollection.com/category/indie/",
-		"http://wearehunted.com/a/#/emerging/",
-		"http://www.facebook.com/FringeMusicFix",
-		"http://www.youtube.com/musicianswanted"
+		"http://sosimpull.com/",
+		"http://www.youtube.com/user/MonstercatMedia",
+		"http://www.youtube.com/user/MusicVVawe",
+		"http://www.youtube.com/user/ukfdubstep",
+		"http://www.youtube.com/user/clowndubstep",
+		"http://www.youtube.com/user/Liquicity",
+		"http://www.youtube.com/user/TastyNetwork"
 	]
 	artists: [
-		"Taylor Swift",
-		"Justin Beiber",
-		"One Direction",
-		"Kanye West"
+		"Skrillex",
+		"Knife Party",
+		"Avicii",
+		"Alex Clarke",
+		"PSY"
 	]
